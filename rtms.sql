@@ -37,7 +37,10 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `password`) VALUES
-(1, 'admin', '1234');
+(1, 'Ayush', '1234'),
+(2, 'Nitin', '1234'),
+(3, 'Samman', '1234'),
+(4, 'Saksham', '1234');
 
 -- --------------------------------------------------------
 
@@ -75,11 +78,11 @@ CREATE TABLE `station` (
 --
 
 INSERT INTO `station` (`id`, `name`, `description`) VALUES
-(1, 'Dhaka', 'xoss'),
-(2, 'Rajshahi', 'beautiful Station'),
-(3, 'Khulna', 'beautiful Station'),
-(5, 'Gazipur', 'beautiful Station'),
-(9, 'Sylet', 'Awesome');
+(1, 'Jaipur', 'xoss'),
+(2, 'Delhi', 'beautiful Station'),
+(3, 'Kolkata', 'beautiful Station'),
+(5, 'Lucknow', 'beautiful Station'),
+(9, 'Chandigarh', 'Awesome');
 
 -- --------------------------------------------------------
 
@@ -103,10 +106,37 @@ CREATE TABLE `train` (
 --
 
 INSERT INTO `train` (`id`, `name`, `place1`, `place2`, `route`, `time`, `vip`, `normal`) VALUES
-(4, 'Sundorban Express', 'Khulna', 'Dhaka', 'Khulna-Kustia-Tangail-Dhaka', '7.00pm khulna to Dhaka 7.00am Dhaka to khulna', 999, 599),
-(5, 'Mohanagar Goduli', 'Chittagong', 'Dhaka', 'Chittagong-Dhaka', '12.15pm Chittagong-Dhaka 12.15am Dhaka-Chittagong', 1599, 899),
-(6, 'Upukol Express', 'Noakhali', 'Dhaka', 'Noakhali-Dhaka', '7am Noakhali-Dhaka 7pm Noakhali-Dhaka', 799, 499),
-(7, 'Agnibina Express', 'Dhaka', 'Tarakandi', 'Dhaka-Tarakandi', '12.00pm Dhaka-Tarakandi 7.00 Tarakandi-Dhaka', 749, 449);
+(12,'Jaipur Express' ,'Chandigarh', 'Jaipur','Chandigarh-Jaipur' ,'7 AM', 2200, 107),
+(12, 'Jaipur Express','Chandigarh', 'Jaipur','Chandigarh-Jaipur' ,'7 AM', 3200, 20),
+(12, 'Jaipur Express','Chandigarh', 'Jaipur', 'Chandigarh-Jaipur','7 AM', 2400, 60),
+(12, 'Jaipur Express','Chandigarh', 'Jaipur', 'Chandigarh-Jaipur','7 AM', 1200, 100),
+(12, 'Jaipur Express','Chandigarh', 'Jaipur','Chandigarh-Jaipur' ,'7 AM', 500, 200),
+(12, 'Kolkata Express','Jaipur', 'Kolkata','Jaipur-Kolkata' ,'7 AM', 1434, 243),
+(12, 'Kolkata Express','Jaipur', 'Kolkata','Jaipur-Kolkata' ,'7 AM', 1434, 243),
+(12, 'Kolkata Express','Jaipur', 'Kolkata','Jaipur-Kolkata' ,'7 AM', 2900, 15),
+(12, 'Kolkata Express','Jaipur', 'Kolkata', 'Jaipur-Kolkata','7 AM', 2100, 40),
+(12, 'Rajdhani Express','Jaipur', 'Kolkata','Jaipur-Kolkata' ,'7 AM', 1500, 120),
+(12, 'Rajdhani Express','Jaipur', 'Kolkata', 'Jaipur-Kolkata','7 AM', 800, 250),
+(12, 'Rajdhani Express','Kolkata', 'Lucknow','Kolkata-Lucknow' ,'7 AM', 934, 322),
+(12, 'Rajdhani Express','Kolkata', 'Lucknow', 'Kolkata-Lucknow','7 AM', 3100, 30),
+(12,'Rajdhani Express' ,'Kolkata', 'Lucknow', 'Kolkata-Lucknow','7 AM', 1900, 30),
+(12, 'Rajdhani Express','Kolkata', 'Lucknow','Kolkata-Lucknow' ,'7 AM', 1700, 150),
+(12, 'Rajdhani Express','Kolkata', 'Lucknow','Kolkata-Lucknow' ,'7 AM', 700, 220),
+(12, 'Rajdhani Express','Lucknow', 'Delhi','Lucknow-Delhi' ,'7 AM', 344, 326),
+(12, 'Rajdhani Express','Lucknow', 'Delhi','Lucknow-Delhi' ,'7 AM', 2750, 20),
+(12, 'Rajdhani Express','Lucknow', 'Delhi','Lucknow-Delhi' ,'7 AM', 2350, 60),
+(12,'Rajdhani Express' ,'Lucknow', 'Delhi','Lucknow-Delhi' ,'7 AM', 1100, 118),
+(12, 'Rajdhani Express','Lucknow', 'Delhi','Lucknow-Delhi' ,'7 AM', 900, 180),
+(18, 'Rajdhani Express','Chandigarh', 'Jaipur','Chandigarh-Jaipur' ,'7 AM', 2420, 50),
+(18, 'Rajdhani Express','Chandigarh', 'Jaipur','Chandigarh-Jaipur' ,'7 AM', 1700, 20),
+(18, 'Rajdhani Express','Chandigarh', 'Jaipur','Chandigarh-Jaipur' ,'7 AM', 750, 120),
+(18, 'Rajdhani Express','Jaipur', 'Delhi','Jaipur-Delhi' ,'7 AM', 2700, 20),
+(18, 'Shatabdi Express','Jaipur', 'Delhi', 'Jaipur-Delhi','7 AM', 1200, 20),
+(18, 'Shatabdi Express','Jaipur', 'Delhi', 'Jaipur-Delhi','7 AM', 900, 150),
+(20,'Shatabdi Express' ,'Delhi', 'Jaipur', 'Delhi-Jaipur','7 AM', 4500, 20),
+(20,'Shatabdi Express' ,'Delhi', 'Jaipur', 'Delhi-Jaipur','7 AM', 3200, 50),
+(20,'Shatabdi Express' ,'Delhi', 'Jaipur', 'Delhi-Jaipur','7 AM', 2700, 50),
+(20, 'Shatabdi Express','Delhi', 'Jaipur', 'Delhi-Jaipur','7 AM', 900, 300);
 
 -- --------------------------------------------------------
 
@@ -130,7 +160,10 @@ CREATE TABLE `user_info` (
 --
 
 INSERT INTO `user_info` (`fullname`, `username`, `address`, `mobile`, `bankname`, `acn`, `password`, `email`) VALUES
-('Amimul Ehshan', 'amims71', 'dhaka', '01752804620', 'DBBL', '123123', '123', 'amims71@gmail.com');
+('Nitin Bhist', 'nitin71', 'Delhi', '01752804620', 'SBI', '123123', '123', 'nitin71@gmail.com'),
+('Ayush Verma', 'ayush71', 'Delhi', '01752804620', 'PNB', '123123', '123', 'ayush71@gmail.com'),
+('Samman Sarkar', 'samman71', 'Delhi', '01752804620', 'ICICI', '123123', '123', 'samman71@gmail.com'),
+('Saksham Singh', 'saksham71', 'Delhi', '01752804620', 'SBI', '123123', '123', 'saksham71@gmail.com');
 
 --
 -- Indexes for dumped tables
